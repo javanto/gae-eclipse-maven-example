@@ -67,8 +67,7 @@
 						<buildCommand>
 							<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
 							<arguments>
-								<LaunchConfigHandle>&lt;project&gt;/.externalToolBuilders/Maven
-									Builder.launch</LaunchConfigHandle>
+								<LaunchConfigHandle>&lt;project&gt;/.externalToolBuilders/MavenBuilder.launch</LaunchConfigHandle>
 							</arguments>
 						</buildCommand>
 					</buildcommands>
@@ -95,7 +94,7 @@
 					</linkedResources>
 					<additionalConfig>
 						<file>
-							<name>.externalToolBuilders/Maven Builder.launch</name>
+							<name>.externalToolBuilders/MavenBuilder.launch</name>
 							<content>
 <![CDATA[<launchConfiguration type="org.maven.ide.eclipse.Maven2BuilderConfigurationType">
 <booleanAttribute key="M2_DEBUG_OUTPUT" value="true"/>
