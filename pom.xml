@@ -188,24 +188,54 @@
 		<repository>
 			<id>maven2-repository.dev.java.net</id>
 			<url>http://download.java.net/maven/2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 		<repository>
 			<id>mvnsearch</id>
 			<url>http://www.mvnsearch.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 		<repository>
 			<id>maven-gae-plugin-repo</id>
 			<url>http://maven-gae-plugin.googlecode.com/svn/repository</url>
-		</repository>
-		<repository>
-			<id>beardedgeeks-snapshots</id>
-			<url>http://beardedgeeks.googlecode.com/svn/repository/snapshots</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>maven-gae-plugin-repo</id>
 			<url>http://maven-gae-plugin.googlecode.com/svn/repository</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>beardedgeeks-snapshots</id>
+			<url>http://beardedgeeks.googlecode.com/svn/repository/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
 
