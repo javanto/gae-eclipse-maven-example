@@ -245,28 +245,28 @@
 			<artifactId>appengine-api-1.0-sdk</artifactId>
 			<version>${gae.version}</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-api-labs</artifactId>
 			<version>${gae.version}</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.appengine.orm</groupId>
 			<artifactId>datanucleus-appengine</artifactId>
 			<version>1.0.4.1</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-core</artifactId>
 			<version>1.1.5</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>compile</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.transaction</groupId>
@@ -279,49 +279,49 @@
 			<artifactId>datanucleus-jpa</artifactId>
 			<version>1.1.5</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-jpa_3.0_spec</artifactId>
 			<version>1.1.1</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-jta_1.1_spec</artifactId>
 			<version>1.1.1</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-servlet_2.5_spec</artifactId>
 			<version>1.2</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-jsp_2.1_spec</artifactId>
 			<version>1.0.1</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-el_1.0_spec</artifactId>
 			<version>1.0.1</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.jdo</groupId>
 			<artifactId>jdo2-api</artifactId>
 			<version>2.3-eb</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>compile</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.transaction</groupId>
@@ -334,7 +334,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.1.2</version>
 			<type>jar</type>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
