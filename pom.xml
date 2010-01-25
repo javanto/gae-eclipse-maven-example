@@ -248,13 +248,6 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-labs</artifactId>
-			<version>${gae.version}</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
 			<groupId>com.google.appengine.orm</groupId>
 			<artifactId>datanucleus-appengine</artifactId>
 			<version>1.0.4.1</version>
@@ -300,7 +293,7 @@
 			<artifactId>geronimo-servlet_2.5_spec</artifactId>
 			<version>1.2</version>
 			<type>jar</type>
-			<scope>compile</scope>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
@@ -329,13 +322,13 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>apache-taglibs</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.1.2</version>
-			<type>jar</type>
-			<scope>runtime</scope>
-		</dependency>
+        <dependency>
+            <artifactId>standard</artifactId>
+            <groupId>taglibs</groupId>
+            <version>1.1.2</version>
+            <type>jar</type>
+            <scope>runtime</scope>
+        </dependency>
 	</dependencies>
 
 	<properties>
