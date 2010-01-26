@@ -39,8 +39,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.0.2</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.5</source>
+					<target>1.5</target>
 				</configuration>
 			</plugin>
 			<!--
@@ -72,7 +72,7 @@
 						</buildCommand>
 					</buildcommands>
 					<classpathContainers>
-						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</classpathContainer>
 						<classpathContainer>com.google.appengine.eclipse.core.GAE_CONTAINER</classpathContainer>
 					</classpathContainers>
 					<excludes>
@@ -322,13 +322,13 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-        <dependency>
-            <artifactId>standard</artifactId>
-            <groupId>taglibs</groupId>
-            <version>1.1.2</version>
-            <type>jar</type>
-            <scope>runtime</scope>
-        </dependency>
+		<dependency>
+			<artifactId>standard</artifactId>
+			<groupId>taglibs</groupId>
+			<version>1.1.2</version>
+			<type>jar</type>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 
 	<properties>
