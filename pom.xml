@@ -60,19 +60,18 @@
 						<projectnature>com.google.appengine.eclipse.core.gaeNature</projectnature>
 					</projectnatures>
 					<buildcommands>
-						<buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
-						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
-						<buildcommand>com.google.appengine.eclipse.core.enhancerbuilder</buildcommand>
-						<buildcommand>com.google.appengine.eclipse.core.projectValidator</buildcommand>
 						<buildCommand>
 							<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
 							<arguments>
 								<LaunchConfigHandle>&lt;project&gt;/.externalToolBuilders/MavenBuilder.launch</LaunchConfigHandle>
 							</arguments>
 						</buildCommand>
+						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
+						<buildcommand>com.google.appengine.eclipse.core.enhancerbuilder</buildcommand>
+						<buildcommand>com.google.appengine.eclipse.core.projectValidator</buildcommand>
 					</buildcommands>
 					<classpathContainers>
-						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</classpathContainer>
+						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
 						<classpathContainer>com.google.appengine.eclipse.core.GAE_CONTAINER</classpathContainer>
 					</classpathContainers>
 					<excludes>
@@ -98,10 +97,10 @@
 							<content>
 <![CDATA[<launchConfiguration type="org.maven.ide.eclipse.Maven2BuilderConfigurationType">
 <booleanAttribute key="M2_DEBUG_OUTPUT" value="true"/>
-<stringAttribute key="M2_GOALS_AFTER_CLEAN" value="war:exploded"/>
-<stringAttribute key="M2_GOALS_AUTO_BUILD" value="war:exploded"/>
+<stringAttribute key="M2_GOALS_AFTER_CLEAN" value="compile war:exploded"/>
+<stringAttribute key="M2_GOALS_AUTO_BUILD" value="compile war:exploded"/>
 <stringAttribute key="M2_GOALS_CLEAN" value="clean"/>
-<stringAttribute key="M2_GOALS_MANUAL_BUILD" value="war:exploded"/>
+<stringAttribute key="M2_GOALS_MANUAL_BUILD" value="compile war:exploded"/>
 <booleanAttribute key="M2_NON_RECURSIVE" value="false"/>
 <booleanAttribute key="M2_OFFLINE" value="false"/>
 <stringAttribute key="M2_PROFILES" value=""/>
