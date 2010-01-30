@@ -62,15 +62,15 @@
 					</projectnatures>
 					<buildcommands>
 						<buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
+						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
+						<buildcommand>com.google.appengine.eclipse.core.enhancerbuilder</buildcommand>
+						<buildcommand>com.google.appengine.eclipse.core.projectValidator</buildcommand>
 						<buildCommand>
 							<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
 							<arguments>
 								<LaunchConfigHandle>&lt;project&gt;/.externalToolBuilders/MavenBuilder.launch</LaunchConfigHandle>
 							</arguments>
 						</buildCommand>
-						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
-						<buildcommand>com.google.appengine.eclipse.core.enhancerbuilder</buildcommand>
-						<buildcommand>com.google.appengine.eclipse.core.projectValidator</buildcommand>
 					</buildcommands>
 					<classpathContainers>
 						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
