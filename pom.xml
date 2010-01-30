@@ -237,13 +237,13 @@
 			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
-			<id>beardedgeeks-snapshots</id>
+			<id>beardedgeeks-releases</id>
 			<url>http://beardedgeeks.googlecode.com/svn/repository/releases</url>
 			<releases>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</releases>
 			<snapshots>
-				<enabled>true</enabled>
+				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
