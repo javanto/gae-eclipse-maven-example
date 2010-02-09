@@ -61,6 +61,12 @@
 						<projectnature>com.google.appengine.eclipse.core.gaeNature</projectnature>
 					</projectnatures>
 					<buildcommands>
+						<buildCommand>
+							<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
+							<arguments>
+								<LaunchConfigHandle>&lt;project&gt;/.externalToolBuilders/MavenCleaner.launch</LaunchConfigHandle>
+							</arguments>
+						</buildCommand>
 						<buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
 						<buildcommand>com.google.gdt.eclipse.core.webAppProjectValidator</buildcommand>
 						<buildcommand>com.google.appengine.eclipse.core.enhancerbuilder</buildcommand>
@@ -97,8 +103,9 @@
 						<file>
 							<name>.externalToolBuilders/MavenBuilder.launch</name>
 							<content>
-<![CDATA[<launchConfiguration type="org.maven.ide.eclipse.Maven2BuilderConfigurationType">
-<booleanAttribute key="M2_DEBUG_OUTPUT" value="true"/>
+<![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.maven.ide.eclipse.Maven2BuilderConfigurationType">
+<booleanAttribute key="M2_DEBUG_OUTPUT" value="false"/>
 <stringAttribute key="M2_GOALS_AFTER_CLEAN" value="war:exploded"/>
 <stringAttribute key="M2_GOALS_AUTO_BUILD" value="war:exploded"/>
 <stringAttribute key="M2_GOALS_CLEAN" value=""/>
@@ -114,7 +121,33 @@
 <booleanAttribute key="editedByExternalToolsMainTab" value="true"/>
 <booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
 <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${basedir}"/>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,auto,clean"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,auto,"/>
+<booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
+</launchConfiguration>]]>
+							</content>
+						</file>
+						<file>
+							<name>.externalToolBuilders/MavenCleaner.launch</name>
+							<content>
+<![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.maven.ide.eclipse.Maven2BuilderConfigurationType">
+<booleanAttribute key="M2_DEBUG_OUTPUT" value="false"/>
+<stringAttribute key="M2_GOALS_AFTER_CLEAN" value="compile test-compile"/>
+<stringAttribute key="M2_GOALS_AUTO_BUILD" value=""/>
+<stringAttribute key="M2_GOALS_CLEAN" value="clean"/>
+<stringAttribute key="M2_GOALS_MANUAL_BUILD" value=""/>
+<booleanAttribute key="M2_NON_RECURSIVE" value="false"/>
+<booleanAttribute key="M2_OFFLINE" value="false"/>
+<stringAttribute key="M2_PROFILES" value=""/>
+<listAttribute key="M2_PROPERTIES"/>
+<stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>
+<booleanAttribute key="M2_SKIP_TESTS" value="false"/>
+<booleanAttribute key="M2_UPDATE_SNAPSHOTS" value="false"/>
+<booleanAttribute key="M2_WORKSPACE_RESOLUTION" value="false"/>
+<booleanAttribute key="editedByExternalToolsMainTab" value="true"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${basedir}"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,clean"/>
 <booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
 </launchConfiguration>]]>
 							</content>
