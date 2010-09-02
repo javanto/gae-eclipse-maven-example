@@ -31,6 +31,20 @@
 			<timezone>+2</timezone>
 		</developer>
 	</developers>
+	
+	<profiles>
+		<profile>
+			<id>windows</id>
+			<activation>
+				<os>
+					<family>windows</family>
+				</os>
+			</activation>
+			<properties>
+				<maven.executable>mvn.bat</maven.executable>
+			</properties>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
@@ -94,7 +108,7 @@
 <launchConfiguration type="org.eclipse.ui.externaltools.ProgramBuilderLaunchConfigurationType">
 <stringAttribute key="org.eclipse.debug.core.ATTR_REFRESH_SCOPE" value="$${project}"/>
 <booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${maven.home}/bin/mvn"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${maven.home}/bin/${maven.executable}"/>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,auto,"/>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="war:exploded"/>
 <booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
@@ -344,6 +358,7 @@ warSrcDirIsOutput=true]]>
 	</dependencies>
 
 	<properties>
+		<maven.executable>mvn</maven.executable>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<gae.version>1.3.5</gae.version>
 		<datanucleus.version>1.1.5</datanucleus.version>
