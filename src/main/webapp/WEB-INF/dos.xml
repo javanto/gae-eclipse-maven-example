@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blacklistentries>
+  <blacklist>
+    <subnet>78.159.112.128</subnet>
+  </blacklist>
+  <blacklist>
+    <subnet>178.162.191.58</subnet>
+  </blacklist>
+</blacklistentries> 

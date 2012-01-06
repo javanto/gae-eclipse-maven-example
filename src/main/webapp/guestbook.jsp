@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:directive.page contentType="text/html; charset=UTF-8"
 	language="java" isELIgnored="false" />
 <jsp:directive.page import="java.util.List" />
