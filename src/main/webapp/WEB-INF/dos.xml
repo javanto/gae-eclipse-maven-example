@@ -6,4 +6,10 @@
   <blacklist>
     <subnet>178.162.191.58</subnet>
   </blacklist>
-</blacklistentries> 
+  <blacklist>
+    <subnet>89.149.223.180</subnet>
+  </blacklist>
+  <blacklist>
+    <subnet>212.95.32.92</subnet>
+  </blacklist>
+</blacklistentries>
